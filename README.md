@@ -1,2 +1,2 @@
 # Curriculum-Vitae-
-Proyecto final integrado del curso de TICMAS
+Proyecto final integrador del curso "Primeros pasos del desarrollo frontend" de TICMAS.
