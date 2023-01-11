@@ -1,0 +1,9 @@
+#maincontainer{
+    display: grid;
+}
+#containerContenido{
+    float: left;
+}
+#containerSidebar{
+    float: right;
+}
