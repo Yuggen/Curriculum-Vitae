@@ -1,9 +1,3 @@
-#maincontainer{
-    display: grid;
-}
-#containerContenido{
-    float: left;
-}
-#containerSidebar{
-    float: right;
+.barraDerecha{
+    background-color: rosybrown;
 }
