@@ -1,3 +1,19 @@
-.barraDerecha{
-    background-color: rosybrown;
+
+#seleccionada {
+    background-color: rosybrown !important;
+}
+.contenido{
+    width: 75% !important;
+    max-width: 80% !important;
+}
+.barraLateral{
+    width: 25% !important;
+    max-width: 20% !important;
+    
+}
+.activo{
+    display: block !important;
+}
+#Resumen,#Experiencia,#Educacion,#Proyectos{
+    display: none;
 }
