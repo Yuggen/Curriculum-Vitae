@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="style/index.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -16,28 +16,43 @@
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
+    <script src="js/scripts.js"></script>
     <title>Curriculum Vitae</title>
   </head>
   <body>
     <div class="d-flex flex-row">
-      <div class="d-flex flex-column flex-shrink-0 p-3 contenido">
+      <section class="d-flex flex-column flex-shrink-0 p-3 contenido">
         <div class="activo" id="Resumen">
-          resumen Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Dolores, illum ducimus! Eos animi iste dolores velit! Nobis repellat,
-          dolores, velit deleniti totam inventore at nam eos dolorum, nulla
-          doloremque? Quas? Lorem ipsum dolor sit amet consectetur adipisicing
-          elit. Minima voluptas nisi iure error excepturi a assumenda laboriosam
-          dicta dolorum in dolorem quod voluptatem, consequatur, aliquid ullam
-          quo est? Maxime, beatae?
+          <h1>Estudiante de ingenieria</h1>
+          <h2>
+            Especialista experimentado comprometido en ofrecer un servicio
+            excepcional.
+          </h2>
+          <h2>
+            Motivado, apto para el trabajo en equipo y con fuertes habilidades
+            organizativas e interpersonales.
+          </h2>
+          <h3>
+            Siempre buscando aprender nuevas habilidades, asumir
+            responsabilidades adicionales y crecer profesionalmente.
+          </h3>
         </div>
         <div class="" id="Experiencia">
-          Experiencia Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Dolores, illum ducimus! Eos animi iste dolores velit! Nobis repellat,
-          dolores, velit deleniti totam inventore at nam eos dolorum, nulla
-          doloremque? Quas? Lorem ipsum dolor sit amet consectetur adipisicing
-          elit. Minima voluptas nisi iure error excepturi a assumenda laboriosam
-          dicta dolorum in dolorem quod voluptatem, consequatur, aliquid ullam
-          quo est? Maxime, beatae?
+          <h1>Experiencia</h1>
+          <div class="d-flex flex-row">
+            <div class="d-flex flex-column col-5">
+              <h2>Buenos Aires, Argentina</h2>
+              <h3>Julio 2019 - Diciembre 2019</h3>
+            </div>
+            <div class="d-flex flex-column">
+              <h2>Programador</h2>
+              <h3>Infinite Loop</h3>
+              <h3>
+                Obtención de conocimientos y puesta en práctica de: ASP Classic,
+                JavaScript, JQuery HTML, CSS, y Microsoft SQL Server.
+              </h3>
+            </div>
+          </div>
         </div>
         <div class="" id="Educacion">
           Educacion Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -57,42 +72,50 @@
           dicta dolorum in dolorem quod voluptatem, consequatur, aliquid ullam
           quo est? Maxime, beatae?
         </div>
-      </div>
-      <div
+        <div class="" id="Contacto"></div>
+      </section>
+      <aside
         class="d-flex flex-column flex-shrink-0 p-3 text-bg-darkp-3 text-bg-dark barraLateral"
       >
         <span class="fs-4"> Matias Matter </span>
         <hr />
         <ul class="nav nav-pills flex-column mb-auto">
-          <li class="nav-item">
+          <li onclick="swapSeleccionada(ResumenBar)">
             <a
               href="#"
-              class="nav-link text-white"
-              aria-current="page"
-              id="seleccionada"
+              class="nav-link text-white seleccionada"
+              id="ResumenBar"
             >
               Resumen
             </a>
           </li>
-          <li>
-            <a href="#" class="nav-link text-white"> Experiencia </a>
+          <li onclick="swapSeleccionada(ExperienciaBar)">
+            <a href="#" class="nav-link text-white" id="ExperienciaBar">
+              Experiencia
+            </a>
           </li>
-          <li>
-            <a href="#" class="nav-link text-white"> Educacion </a>
+          <li onclick="swapSeleccionada(EducacionBar)">
+            <a href="#" class="nav-link text-white" id="EducacionBar">
+              Educacion
+            </a>
           </li>
-          <li>
-            <a href="#" class="nav-link text-white"> Proyectos </a>
+          <li onclick="swapSeleccionada(ProyectosBar)">
+            <a href="#" class="nav-link text-white" id="ProyectosBar">
+              Proyectos
+            </a>
           </li>
         </ul>
         <hr />
         <div class="dropdown">
           <ul class="nav nav-pills flex-column mb-auto">
-            <li>
-              <a href="#" class="nav-link text-white"> Contacto </a>
+            <li onclick="swapSeleccionada(ContactoBar)">
+              <a href="#" class="nav-link text-white" id="ContactoBar">
+                Contacto
+              </a>
             </li>
           </ul>
         </div>
-      </div>
+      </aside>
     </div>
   </body>
 </html>
