@@ -1,4 +1,10 @@
-
+body{
+    background-color: rgb(177, 177, 177)!important;
+}
+.fondo{
+    background-color: white;
+    padding: 20px !important;
+}
 .seleccionada {
     background-color: rosybrown !important;
 }
@@ -13,6 +19,18 @@
 }
 .activo{
     display: block !important;
+}
+.titulo{
+    text-align: center;
+    font-weight: bold;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+.contenido{
+    color: #000;
+    margin: 0;
+    padding: 0;
 }
 #Resumen,#Experiencia,#Educacion,#Proyectos{
     display: none;
