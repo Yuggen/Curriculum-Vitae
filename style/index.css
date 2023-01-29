@@ -1,10 +1,7 @@
 body{
-    background-color: rgb(177, 177, 177)!important;
+
     font-family: 'Roboto' !important;
-}
-.fondo{
-    background-color: white;
-    padding: 20px !important;
+    font-size: large !important;
 }
 .seleccionada {
     background-color: rosybrown !important;
@@ -33,6 +30,6 @@ body{
     margin: 0;
     padding: 0;
 }
-#Resumen,#Experiencia,#Educacion,#Proyectos{
+#Resumen,#Experiencia,#Formacion,#Proyectos,#Contacto{
     display: none;
 }
