@@ -1,255 +1,239 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style/index.css" />
-    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://kit.fontawesome.com/fd534518fa.js"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-      crossorigin="anonymous"
-    ></script>
-    <script src="js/scripts.js"></script>
-   <link rel="icon" href="images/anya.jpg" type="image/png" sizes="16x16">
-    <!-- Lineas de OGP-->
-    <meta property="og:title" content="Curriculum Vitae HTML" />
-    <meta property="og:type" content="CV" />
-    <meta property="og:image" content="images/anya.jpg" />
-    <meta property="og:url" content="https://yuggen.github.io/Curriculum-Vitae/" />
-    <meta property="og:description" content="Curriculum Vitae version HTML creado por Matias Matter" />
-    <meta property="og:locale" content="es_ES" />
 
-    <title>Curriculum Vitae</title>
-  </head>
-  <body>
-    <!-- Container general -->
-    <div class="container-fluid p-0">
-      <!-- Barra de navegacion -->
-      <nav class="navbar navbar-expand-md navbar-dark p-3 bg-dark ms-auto text-center flex-sm-nowrap flex-wrap">
-        <button
-        class="navbar-toggler flex-grow-sm-1 me-2"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarNavDropdown"
-        aria-controls="navbarNavDropdown"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-        >
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style/index.css" />
+  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+  <script src="https://kit.fontawesome.com/fd534518fa.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+  <script src="js/scripts.js"></script>
+  <link rel="icon" href="images/anya.jpg" type="image/png" sizes="16x16">
+  <!-- Lineas de OGP-->
+  <meta property="og:title" content="Curriculum Vitae HTML" />
+  <meta property="og:type" content="CV" />
+  <meta property="og:image" content="images/anya.jpg" />
+  <meta property="og:url" content="https://yuggen.github.io/Curriculum-Vitae/" />
+  <meta property="og:description" content="Curriculum Vitae version HTML creado por Matias Matter" />
+  <meta property="og:locale" content="es_ES" />
+
+  <title>Curriculum Vitae</title>
+</head>
+
+<body>
+  <!-- Container general -->
+  <div class="container-fluid p-0">
+    <!-- Barra de navegacion -->
+    <nav class="navbar navbar-expand-md navbar-dark p-3 bg-dark ms-auto text-center flex-sm-nowrap flex-wrap">
+      <button class="navbar-toggler flex-grow-sm-1 me-2" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+        aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <a class="navbar-brand flex-md-grow-0 flex-grow-1" href="#">Matias Matter</a>
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav nav-pills flex-grow-1 justify-content-center mt-md-0 mt-3">
-            <li onclick="swapSeleccionada(ResumenBar)">
-              <a
-                href="#"
-                class="nav-link text-white seleccionada"
-                id="ResumenBar"
-              >
-                Resumen
-              </a>
-            </li>
-            <li onclick="swapSeleccionada(ExperienciaBar)">
-              <a href="#" class="nav-link text-white" id="ExperienciaBar">
-                Experiencia
-              </a>
-            </li>
-            <li onclick="swapSeleccionada(FormacionBar)">
-              <a href="#" class="nav-link text-white" id="FormacionBar">
-                Formacion
-              </a>
-            </li>
-            <li onclick="swapSeleccionada(ProyectosBar)">
-              <a href="#" class="nav-link text-white" id="ProyectosBar">
-                Proyectos
-              </a>
-            </li>
-            <li onclick="swapSeleccionada(ContactoBar)">
-              <a href="#" class="nav-link text-white" id="ContactoBar">
-                Contacto
-              </a>
-            </li>
-          </ul>
+        <ul class="navbar-nav nav-pills flex-grow-1 justify-content-center mt-md-0 mt-3">
+          <li onclick="swapSeleccionada(ResumenBar)">
+            <a href="#" class="nav-link text-white seleccionada" id="ResumenBar">
+              Resumen
+            </a>
+          </li>
+          <li onclick="swapSeleccionada(ExperienciaBar)">
+            <a href="#" class="nav-link text-white" id="ExperienciaBar">
+              Experiencia
+            </a>
+          </li>
+          <li onclick="swapSeleccionada(FormacionBar)">
+            <a href="#" class="nav-link text-white" id="FormacionBar">
+              Formacion
+            </a>
+          </li>
+          <li onclick="swapSeleccionada(ProyectosBar)">
+            <a href="#" class="nav-link text-white" id="ProyectosBar">
+              Proyectos
+            </a>
+          </li>
+          <li onclick="swapSeleccionada(ContactoBar)">
+            <a href="#" class="nav-link text-white" id="ContactoBar">
+              Contacto
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Contenido -->
+    <section class="d-flex m-4 m-md-auto flex-shrink-0 pt-3 contenido">
+      <!-- Resumen -->
+      <div class="activo" id="Resumen">
+        <figure class="figure float-lg-end">
+          <img src="images/fotocv.jpg" class="figure-img img-fluid rounded-pill" width="310" height="310">
+        </figure>
+        <br>
+        <br>
+        <div class="m-6">
+          <h2 class="fs-4">
+            Especialista experimentado comprometido en ofrecer un servicio excepcional.
+            <br>
+            Motivado, apto para el trabajo en equipo y con fuertes habilidades
+            organizativas e interpersonales.
+            <br>
+            Siempre buscando aprender nuevas habilidades, asumir
+            responsabilidades adicionales y crecer profesionalmente.
+          </h2>
+          <br>
+          <div class="d-flex flex-row">
+            <div class="d-flex flex-column col-8">
+              <h2 class="fs-4 fw-bold"> Habilidades</h2>
+              <h2 class="fs-5"> Enfocado al aprendizaje</h2>
+              <h2 class="fs-5"> Trabajo en equipo</h2>
+              <h2 class="fs-5"> Resolución de problemas</h2>
+              <h2 class="fs-5"> Conocimientos en redes</h2>
+              <h2 class="fs-5"> Conocimientos en hardware</h2>
+            </div>
+            <div class="d-flex flex-column">
+              <h2 class="fs-4 fw-bold"> Idiomas</h2>
+              <h2 class="fs-5"> Español - Nativo</h2>
+              <h2 class="fs-5"> Ingles - Intermedo</h2>
+            </div>
+          </div>
         </div>
-      </nav>
-      <!-- Contenido -->
-        <section class="d-flex m-3 m-md-auto flex-shrink-0 pt-3 contenido">
-          <!-- Resumen -->
-          <div class="" id="Resumen">
-              <figure class="figure float-lg-end">
-                <img src="images/anya.jpg" class="figure-img img-fluid rounded-circle">
-              </figure>
-              <br>
-              <br>
-              <div class="m-6">
-                <h2 class="fs-4">
-                  Especialista experimentado comprometido en ofrecer un servicio excepcional.
-                  <br>
-                  Motivado, apto para el trabajo en equipo y con fuertes habilidades
-                  organizativas e interpersonales.
-                  <br>
-                  Siempre buscando aprender nuevas habilidades, asumir
-                  responsabilidades adicionales y crecer profesionalmente.
-                </h2>
-                <br>
-                <div class="d-flex flex-row">
-                <div class="d-flex flex-column col-8">
-                  <h2 class="fs-4 fw-bold"> Habilidades</h2>
-                  <h2 class="fs-5"> Enfocado al aprendizaje</h2>
-                  <h2 class="fs-5"> Trabajo en equipo</h2>
-                  <h2 class="fs-5"> Resolución de problemas</h2>
-                  <h2 class="fs-5"> Conocimientos en redes</h2>
-                  <h2 class="fs-5"> Conocimientos en hardware</h2>
-                </div>
-                <div class="d-flex flex-column">
-                  <h2 class="fs-4 fw-bold"> Idiomas</h2>
-                  <h2 class="fs-5"> Español - Nativo</h2>
-                  <h2 class="fs-5"> Ingles - Intermedo</h2>
-                </div>
-              </div>
-              </div>
-          </div>
-          <!-- Experiencia -->
-          <div class="" id="Experiencia">
-            <ul class="p-0 m-0 border-0">
-              <li class="d-flex flex-row">
-                <div class="d-flex flex-column col-6 col-md-4 col-lg-3">
-                  <h2 class="flex-shrink-1 fs-4">Ciudad Autonoma de Buenos Aires Argentina</h2>
-                  <h3 class="fs-6">Nov 2021 - Presente</h3>
-                </div>
-                <div class="d-flex flex-column">
-                  <h2 class="fs-4 fw-bold">Soporte Tecnico</h2>
-                  <h3 class="fs-5">Ministerio De Educacion De La Nacion Argentina</h3>
-                  <h3 class="fs-6  m-0">
-                    Asistencia remota y presencial en Computadoras e Impresoras
-                  </h3>
-                  <h3 class="fs-6">
-                    reaparaciones en hardware y software de equipos en dominio
-                  </h3>
-                </div>
-              </li>
-              <br>
-              <li class="d-flex flex-row">
-                <div class="d-flex flex-column col-6 col-md-4  col-lg-3">
-                  <h2 class="flex-shrink-1 fs-4">Buenos Aires, Argentina</h2>
-                  <h3 class=" fs-6">Jul 2019 - Dic 2019</h3>
-                </div>
-                <div class="d-flex flex-column">
-                  <h2 class="fs-4 fw-bold">Pasante Desarrollador Web Junior</h2>
-                  <h3 class="fs-5">Infinite Loop</h3>
-                  <h3 class="fs-6">
-                    Desarrollo web con ASP Classic, JavaScript, JQuery HTML, CSS, y Microsoft SQL Server.
-                  </h3>
-                </div>
-              </li>
-              <br>
-              <li class="d-flex flex-row">
-                <div class="d-flex flex-column col-6 col-md-4 col-lg-3">
-                  <h2 class="flex-shrink-1 fs-4">Buenos Aires, Argentina</h2>
-                  <h3 class=" fs-6">Dic 2019 - Nov 2021</h3>
-                </div>
-                <div class="d-flex flex-column">
-                  <h2 class="fs-4 fw-bold">Armado y Reparacion de PC</h2>
-                  <h3 class="fs-5">Freelance</h3>
-                  <h3 class="fs-6">
-                    Armado y configuracion de computadoras, instalacion de sistemas
-                    operativos y programas afines, asistencia y reparacion
-                    presencial a particulares y empresas pequeñas.
-                  </h3>
-                </div>
-              </li>
-            </ul>
-          </div>
-          <!-- Formacion -->
-          <div class="" id="Formacion">
-            <ul class="p-0 m-0 border-0">
-              <li class="d-flex flex-row">
-                <div class="d-flex flex-column col-7 col-md-5">
-                  <h2 class="flex-shrink-1 fs-4">Buenos Aires, Argentina</h2>
-                  <h3 class="fs-6">Abr 2020 - Presente</h3>
-                </div>
-                <div class="d-flex flex-column">
-                  <h2 class="fs-4 fw-bold">Universidad Nacional De La Matanza</h2>
-                  <h3 class="fs-5">Ingenieria en informatica</h3>
-                  <h3 class="fs-6">Materias regularizadas: 11 Promedio: 7.72</h3>
-                </div>
-              </li>
-              <li class="d-flex flex-row">
-                <div class="d-flex flex-column col-7 col-md-5">
-                  <h2 class="flex-shrink-1 fs-4">Buenos Aires, Argentina</h2>
-                  <h3 class="fs-6">Mar 2013 - Dic 2019</h3>
-                </div>
-                <div class="d-flex flex-column">
-                  <h2 class="fs-4 fw-bold">Colegio Parroquial San Juan XXIII</h2>
-                  <h3 class="fs-5">Tecnico en informatica personal y profesional</h3>
-                  <h3 class="fs-6">
-                    Promedio: 7.54 Curso Cisco CCNA Nivel 1,2,3 y 4 Aprobados no
-                    certificados
-                  </h3>
-                </div>
-              </li>
-            </ul>
-          </div>
-          <!-- Proyectos -->
-          <div class="" id="Proyectos">
-            <h3 class="fs-2 fw-bold">Proyectos personales</h3>
-            
-            <h2 class="fs-4 fw-bold">Área: Dispositivos Móviles</h2>
-            <h3 class="fs-6  mt-0">
-              Manipulación de hardware en espacios reducidos,flasheo de memorias
-              y sobreescritura de datos.
-            </h3>
-            <h2 class="fs-4 fw-bold">Área: Conectividad y Networking</h2>
-            <h3 class="fs-6  mt-0">
-              Proyecto, Diseño e Implementación de medidas de conectividad.
-            </h3>
-            
-            <h3 class="fs-2 fw-bold">Proyectos Escolares</h3>
+      </div>
+      <!-- Experiencia -->
+      <div class="" id="Experiencia">
+        <ul class="p-0 m-0 border-0">
+          <li class="d-flex flex-row">
+            <div class="d-flex flex-column col-6 col-md-4 col-lg-3">
+              <h2 class="flex-shrink-1 fs-4">Ciudad Autonoma de Buenos Aires Argentina</h2>
+              <h3 class="fs-6">Nov 2021 - Presente</h3>
+            </div>
+            <div class="d-flex flex-column">
+              <h2 class="fs-4 fw-bold">Soporte Tecnico</h2>
+              <h3 class="fs-5">Ministerio De Educacion De La Nacion Argentina</h3>
+              <h3 class="fs-6  m-0">
+                Asistencia remota y presencial en Computadoras e Impresoras
+              </h3>
+              <h3 class="fs-6">
+                reaparaciones en hardware y software de equipos en dominio
+              </h3>
+            </div>
+          </li>
+          <br>
+          <li class="d-flex flex-row">
+            <div class="d-flex flex-column col-6 col-md-4  col-lg-3">
+              <h2 class="flex-shrink-1 fs-4">Buenos Aires, Argentina</h2>
+              <h3 class=" fs-6">Jul 2019 - Dic 2019</h3>
+            </div>
+            <div class="d-flex flex-column">
+              <h2 class="fs-4 fw-bold">Pasante Desarrollador Web Junior</h2>
+              <h3 class="fs-5">Infinite Loop</h3>
+              <h3 class="fs-6">
+                Desarrollo web con ASP Classic, JavaScript, JQuery HTML, CSS, y Microsoft SQL Server.
+              </h3>
+            </div>
+          </li>
+          <br>
+          <li class="d-flex flex-row">
+            <div class="d-flex flex-column col-6 col-md-4 col-lg-3">
+              <h2 class="flex-shrink-1 fs-4">Buenos Aires, Argentina</h2>
+              <h3 class=" fs-6">Dic 2019 - Nov 2021</h3>
+            </div>
+            <div class="d-flex flex-column">
+              <h2 class="fs-4 fw-bold">Armado y Reparacion de PC</h2>
+              <h3 class="fs-5">Freelance</h3>
+              <h3 class="fs-6">
+                Armado y configuracion de computadoras, instalacion de sistemas
+                operativos y programas afines, asistencia y reparacion
+                presencial a particulares y empresas pequeñas.
+              </h3>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <!-- Formacion -->
+      <div class="" id="Formacion">
+        <ul class="p-0 m-0 border-0">
+          <li class="d-flex flex-row">
+            <div class="d-flex flex-column col-7 col-md-5">
+              <h2 class="flex-shrink-1 fs-4">Buenos Aires, Argentina</h2>
+              <h3 class="fs-6">Abr 2020 - Presente</h3>
+            </div>
+            <div class="d-flex flex-column">
+              <h2 class="fs-4 fw-bold">Universidad Nacional De La Matanza</h2>
+              <h3 class="fs-5">Ingenieria en informatica</h3>
+              <h3 class="fs-6">Materias regularizadas: 11 Promedio: 7.72</h3>
+            </div>
+          </li>
+          <li class="d-flex flex-row">
+            <div class="d-flex flex-column col-7 col-md-5">
+              <h2 class="flex-shrink-1 fs-4">Buenos Aires, Argentina</h2>
+              <h3 class="fs-6">Mar 2013 - Dic 2019</h3>
+            </div>
+            <div class="d-flex flex-column">
+              <h2 class="fs-4 fw-bold">Colegio Parroquial San Juan XXIII</h2>
+              <h3 class="fs-5">Tecnico en informatica personal y profesional</h3>
+              <h3 class="fs-6">
+                Promedio: 7.54 Curso Cisco CCNA Nivel 1,2,3 y 4 Aprobados no
+                certificados
+              </h3>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <!-- Proyectos -->
+      <div class="" id="Proyectos">
+        <h3 class="fs-2 fw-bold">Proyectos personales</h3>
 
-            <h2 class="fs-4 fw-bold">Área: Conectividad y Networking</h2>
-            <h3 class="fs-6  m-0">
-              Planificación, Diagramación, Presupuestación e Implementación a
-              través de la plataforma digital de Cisco NetAcademy y Cisco Packet
-              Tracer.
-            </h3>
-          </div>
-          <!-- Contacto -->
-          <div class="activo" id="Contacto">
-            <div class="row text-center">
+        <h2 class="fs-4 fw-bold">Área: Dispositivos Móviles</h2>
+        <h3 class="fs-6  mt-0">
+          Manipulación de hardware en espacios reducidos,flasheo de memorias
+          y sobreescritura de datos.
+        </h3>
+        <h2 class="fs-4 fw-bold">Área: Conectividad y Networking</h2>
+        <h3 class="fs-6  mt-0">
+          Proyecto, Diseño e Implementación de medidas de conectividad.
+        </h3>
+
+        <h3 class="fs-2 fw-bold">Proyectos Escolares</h3>
+
+        <h2 class="fs-4 fw-bold">Área: Conectividad y Networking</h2>
+        <h3 class="fs-6  m-0">
+          Planificación, Diagramación, Presupuestación e Implementación a
+          través de la plataforma digital de Cisco NetAcademy y Cisco Packet
+          Tracer.
+        </h3>
+      </div>
+      <!-- Contacto -->
+      <div class="" id="Contacto">
+        <div class="row text-center">
+          <br>
+          <h3 class="fs-2 fw-bold">Telefono
             <br>
-            <h3 class="fs-2 fw-bold">Telefono
-              <br>
-              <a href="tel:+549112274-9756" class="fw-normal">+54 911 22749756</a>
-            </h3>
+            <a href="tel:+549112274-9756" class="fw-normal">+54 911 22749756</a>
+          </h3>
+          <br>
+          <h3 class="fs-2 fw-bold">E-Mail
             <br>
-            <h3 class="fs-2 fw-bold">E-Mail
-              <br>
-              <a href="mailto: matiasamatter@gmail.com" class="fw-normal"> matiasamatter@gmail.com </a>
-            </h3>
+            <a href="mailto: matiasamatter@gmail.com" class="fw-normal"> matiasamatter@gmail.com </a>
+          </h3>
+          <br>
+          <h3 class="fs-2 fw-bold">LinkedIn
             <br>
-            <h3 class="fs-2 fw-bold">LinkedIn
-              <br>
             <a href="https://www.linkedin.com/in/matterm/" target="_blank" class="fw-normal">linkedin</a>
           </h3>
           <br>
           <h3 class="fs-2 fw-bold">GitHub Personal
             <br>
-          <a href="https://github.com/Yuggen" target="_blank" class="fw-normal">GitHub</a>
-        </h3>
-          </div>
+            <a href="https://github.com/Yuggen" target="_blank" class="fw-normal">GitHub</a>
+          </h3>
         </div>
-        </section>
-  </body>
+      </div>
+    </section>
+</body>
+
 </html>
